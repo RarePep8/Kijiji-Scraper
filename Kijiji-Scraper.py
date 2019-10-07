@@ -26,7 +26,7 @@ def ParseAd(html):  # Parses ad html trees and sorts relevant data into a dictio
         print('[Error] Unable to parse Image data')
 
     try:
-        ad_info["Url"] = 'http://www.kijiji.ca' + html.get("data-vip-url")
+        ad_info["Url"] = 'https://www.kijiji.ca' + html.get("data-vip-url")
     except:
         print('[Error] Unable to parse URL data.')
         
